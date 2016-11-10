@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Quotes</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <style>
+
+            /* Navigation bar */ 
+            #NavBar {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #f1f1f1;
+            }
+
+            li a {
+                float: left;
+                display: block;
+                color: #000;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            li a.active {
+                background-color: #4CAF50;
+                color: white;
+            }
+
+            li a:hover:not(.active) {
+                background-color: #555;
+                color: white;
+            }
+
+
+            /* Came with it */
+            body {
+                font: 400 15px/1.8 Lato, sans-serif;
+                color: #777;
+            }
+            h3, h4 {
+                margin: 10px 0 30px 0;
+                letter-spacing: 10px;
+                font-size: 20px;
+                color: #111;
+            }
+            .container {
+                padding: 80px 120px;
+            }
+            .form-control {
+                border-radius: 0;
+            }
+        </style>
+
+    </head>
+    <body>
+
+        <!-- Navigation Bar -->
+        <div>
+            <ul id="NavBar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="current.html">Current</a></li>
+                <li><a class="active" href="quotes.html">Quote</a></li>
+            </ul>
+        </div>
+
+        <!-- Quote -->
+        <div id="contact" class="container">
+            <h1 class="text-center">Write a Quote</h1>
+            <p class="text-center"><em>Remember to put down the author.</em></p>
+
+            <div class="row">
+                <div>
+                    <form action="database.php" method="post">
+                        <textarea class="form-control" id="quotes" name="quote" placeholder="Quote" rows="4"></textarea>
+                        <textarea class="form-control" id="author" name="author" placeholder="Author" rows="1"></textarea>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-12 form-group">
+                                <button class="btn pull-right" type="submit">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <br>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Original Home</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="site.css" >
+    </head>
+
+    <body> 
+        <!-- Navigation Bar -->
+        <ul id="NavBar">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="current.html">Current</a></li>   
+        </ul>
+
+        <!-- Title -->
+        <h1 id="Title">Hello World!</h1>
+
+        <div id="ContainerLeft">
+            <div id="ContainerRight">
+
+                <!-- Sentences -->
+                <div id="Sentences"> 
+                    <button id="SentencesButton">Toggle between hiding and showing the sentences</button>
+                    <script>
+                        $(document).ready(function () {
+                            $("#SentencesButton").click(function () {
+                                $(".Words").toggle();
+                            });
+                        });
+                    </script>
+                    <p class="Words">This is the page of pdave</p>
+                    <p class="Words">I am the one who knocks!</p> 
+                </div>
+
+                <!-- Button to change background -->
+                <div id="Button">
+                    <p>Click the button to trigger a function that will change the background of the navigation bar.</p>
+                    <button onclick="Background()"> Click to change background color of navigation bar </button>
+                    <script src="JScript.js"></script>
+                </div>
+
+                <!-- First box -->
+                <div id="box">
+                    <h2 id="boxTitle"> Title Please </h2>
+                    <p id="boxContent"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas accumsan, odio ac sollicitudin congue, erat dolor luctus enim, quis convallis libero nibh a diam. Sed posuere quam nec ligula venenatis rutrum. In eget porta eros. Ut blandit, enim ut luctus hendrerit, eros libero consectetur enim, quis iaculis lacus turpis at nulla. Vestibulum vehicula, lorem a rutrum aliquet, lacus libero commodo mauris, quis rutrum purus mauris vel velit. Quisque at lacinia urna, ut hendrerit dolor. In tincidunt malesuada tempor. Sed nec libero pulvinar, ultrices nulla nec, pellentesque odio. Suspendisse vitae mi enim. Duis dignissim vestibulum dui sed viverra. Donec pretium odio vitae sem sollicitudin feugiat. Donec volutpat felis metus, sit amet scelerisque leo auctor quis. Ut vitae accumsan metus. Donec lacinia mi non ex venenatis vestibulum. Aenean egestas velit quis lacus tempus placerat a a purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum ornare sapien sit amet viverra egestas. Praesent augue nunc, bibendum et elit a, interdum ullamcorper nisi. Mauris dapibus sem leo, eget porttitor nunc aliquet sagittis. </p>      
+                    
+                    <!-- Visitor Log -->
+                    <p><span class="error">* Required field.</span></p>
+                    <form action="VisitorLog.php" method="post">
+                        First Name: <input type="text" name="firstName">
+                        <span class="error">* </span><br>
+                        
+                        Last Name: <input type="text" name="lastName">
+                        <span class="error">* </span><br>
+                        
+                        E-mail Address: <input type="text" name="email">
+                        <span class="error">* </span><br>
+                        <input type="submit">
+                    </form>
+                </div>
+
+                <!-- Clear div -->
+                <div id="cleardiv">
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>
