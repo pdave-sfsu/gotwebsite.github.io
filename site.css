@@ -69,7 +69,7 @@ li a:hover:not(.active) {
 
 /* Left Container*/
 #ContainerLeft {
-    background-image: url(http://www.sots.ac.uk/resources/more_col_base.jpg);
+    background-image: url(https://www.sots.ac.uk/resources/more_col_base.jpg);
     background-repeat: repeat-y;
 }
 
@@ -82,7 +82,7 @@ li a:hover:not(.active) {
 
 /* Right Container*/
 #ContainerRight {
-    background-image: url(http://www.asmor.com/images/header_base.jpg);
+    background-image: url(https://www.asmor.com/images/header_base.jpg);
     background-repeat: repeat-y;
     background-position: right;
 }
